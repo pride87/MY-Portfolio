@@ -39,12 +39,10 @@ const fallbackRepos = [
 
 const GitHub = () => {
   const [repos, setRepos] = useState(fallbackRepos);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        setLoading(true);
         const response = await fetch('https://api.github.com/users/pride87/repos?sort=updated&per_page=6');
         if (response.ok) {
           const data = await response.json();
@@ -52,10 +50,8 @@ const GitHub = () => {
             setRepos(data);
           }
         }
-      } catch (err) {
+      } catch {
         console.log('Using default repository showcase list.');
-      } finally {
-        setLoading(false);
       }
     };
 

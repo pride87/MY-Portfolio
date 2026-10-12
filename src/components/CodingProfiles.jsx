@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, ExternalLink, Award, CheckCircle2, Trophy } from 'lucide-react';
+import { Code, ExternalLink, CheckCircle2, Trophy } from 'lucide-react';
 
 const CodingProfiles = () => {
   return (

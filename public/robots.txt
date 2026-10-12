@@ -1,0 +1,6 @@
+# robots.txt for https://abhishekratho.me/
+User-agent: *
+Allow: /
+
+# Sitemap Reference
+Sitemap: https://abhishekratho.me/sitemap.xml

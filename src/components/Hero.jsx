@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, FolderGit2 } from 'lucide-react';
-import { LinkedInIcon, GitHubIcon, CodeChefIcon, LeetCodeIcon } from './Icons';
-import profilePhoto from '../assets/download(1).png';
+import { LinkedInIcon, InstagramIcon, GitHubIcon, CodeChefIcon, LeetCodeIcon } from './Icons';
+import profilePhoto from '../assets/profile.webp';
 
 const Hero = () => {
   return (
@@ -37,16 +37,28 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-icon" 
-              title="LinkedIn Profile"
+              title="Abhishek Rathor on LinkedIn"
+              aria-label="Abhishek Rathor on LinkedIn"
             >
               <LinkedInIcon size={20} />
+            </a>
+            <a 
+              href="https://www.instagram.com/abhishek_rathor849/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="social-icon" 
+              title="Abhishek Rathor on Instagram"
+              aria-label="Abhishek Rathor on Instagram"
+            >
+              <InstagramIcon size={20} />
             </a>
             <a 
               href="https://github.com/pride87" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-icon" 
-              title="GitHub Profile"
+              title="Abhishek Rathor on GitHub"
+              aria-label="Abhishek Rathor on GitHub"
             >
               <GitHubIcon size={20} />
             </a>
@@ -55,7 +67,8 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-icon" 
-              title="CodeChef Profile"
+              title="Abhishek Rathor on CodeChef"
+              aria-label="Abhishek Rathor on CodeChef"
             >
               <CodeChefIcon size={20} />
             </a>
@@ -64,7 +77,8 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-icon" 
-              title="LeetCode Profile"
+              title="Abhishek Rathor on LeetCode"
+              aria-label="Abhishek Rathor on LeetCode"
             >
               <LeetCodeIcon size={20} />
             </a>
@@ -75,8 +89,12 @@ const Hero = () => {
           <div className="hero-photo-container">
             <img 
               src={profilePhoto} 
-              alt="Abhishek Rathor Profile" 
+              alt="Abhishek Rathor - Software Developer Portfolio Profile Photo" 
               className="hero-photo"
+              width="400"
+              height="400"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
         </div>

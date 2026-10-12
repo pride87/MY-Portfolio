@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send, MessageCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import { LinkedInIcon, GitHubIcon, CodeChefIcon, LeetCodeIcon } from './Icons';
+import { LinkedInIcon, InstagramIcon, GitHubIcon, CodeChefIcon, LeetCodeIcon } from './Icons';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -107,7 +107,7 @@ const Contact = () => {
             // We simulate successful transmission and open WhatsApp directly
             emailSentSuccess = true;
           }
-        } catch (_fetchErr) {
+        } catch {
           // If local endpoint is unreachable, fallback gracefully to completing client-side notification
           emailSentSuccess = true;
         }
@@ -218,16 +218,28 @@ const Contact = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="social-icon" 
-                    title="LinkedIn"
+                    title="Abhishek Rathor on LinkedIn"
+                    aria-label="Abhishek Rathor on LinkedIn"
                   >
                     <LinkedInIcon size={18} />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/abhishek_rathor849/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="social-icon" 
+                    title="Abhishek Rathor on Instagram"
+                    aria-label="Abhishek Rathor on Instagram"
+                  >
+                    <InstagramIcon size={18} />
                   </a>
                   <a 
                     href="https://github.com/pride87" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="social-icon" 
-                    title="GitHub"
+                    title="Abhishek Rathor on GitHub"
+                    aria-label="Abhishek Rathor on GitHub"
                   >
                     <GitHubIcon size={18} />
                   </a>
@@ -236,7 +248,8 @@ const Contact = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="social-icon" 
-                    title="CodeChef"
+                    title="Abhishek Rathor on CodeChef"
+                    aria-label="Abhishek Rathor on CodeChef"
                   >
                     <CodeChefIcon size={18} />
                   </a>
@@ -245,7 +258,8 @@ const Contact = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="social-icon" 
-                    title="LeetCode"
+                    title="Abhishek Rathor on LeetCode"
+                    aria-label="Abhishek Rathor on LeetCode"
                   >
                     <LeetCodeIcon size={18} />
                   </a>

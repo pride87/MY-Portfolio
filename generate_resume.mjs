@@ -16,7 +16,6 @@ async function generatePDF() {
   const textDark = rgb(0.12, 0.16, 0.23);
   const textMuted = rgb(0.4, 0.45, 0.55);
   const primaryBlue = rgb(0.15, 0.45, 0.92);
-  const lineGray = rgb(0.85, 0.88, 0.92);
 
   let y = height - 40;
 

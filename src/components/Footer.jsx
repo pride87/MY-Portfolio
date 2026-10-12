@@ -14,8 +14,19 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link"
+            aria-label="Abhishek Rathor on LinkedIn"
           >
             LinkedIn
+          </a>
+          <span style={{ color: 'var(--text-dim)' }}>|</span>
+          <a 
+            href="https://www.instagram.com/abhishek_rathor849/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="footer-link"
+            aria-label="Abhishek Rathor on Instagram"
+          >
+            Instagram
           </a>
           <span style={{ color: 'var(--text-dim)' }}>|</span>
           <a 
@@ -23,6 +34,7 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link"
+            aria-label="Abhishek Rathor on GitHub"
           >
             GitHub
           </a>
@@ -32,6 +44,7 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link"
+            aria-label="Abhishek Rathor on CodeChef"
           >
             CodeChef
           </a>
@@ -41,6 +54,7 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link"
+            aria-label="Abhishek Rathor on LeetCode"
           >
             LeetCode
           </a>
