@@ -14,8 +14,8 @@ const Navbar = () => {
         setScrolled(false);
       }
 
-      const sections = ['home', 'about', 'skills', 'projects', 'education', 'achievements', 'contact'];
-      const scrollPos = window.scrollY + 200;
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'education', 'contact'];
+      const scrollPos = window.scrollY + 220;
 
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -30,7 +30,7 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -83,20 +83,20 @@ const Navbar = () => {
           </li>
           <li>
             <a 
+              href="#experience" 
+              className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a 
               href="#education" 
               className={`nav-link ${activeSection === 'education' ? 'active' : ''}`}
               onClick={closeMenu}
             >
               Education
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#achievements" 
-              className={`nav-link ${activeSection === 'achievements' ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              Achievements
             </a>
           </li>
           <li>

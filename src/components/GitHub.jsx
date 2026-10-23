@@ -4,6 +4,22 @@ import { GitHubIcon } from './Icons';
 
 const fallbackRepos = [
   {
+    name: 'Plant-Disease-Detection-System',
+    description: 'AI agricultural diagnostics platform: React + Express + FastAPI + PyTorch EfficientNet-B0 predicting 38 plant disease classes.',
+    stargazers_count: 3,
+    forks_count: 1,
+    language: 'Python',
+    html_url: 'https://github.com/pride87'
+  },
+  {
+    name: 'Chest-X-Ray-Disease-Prediction',
+    description: 'Deep learning thoracic radiograph analysis system powered by PyTorch DenseNet-121 and FastAPI backend.',
+    stargazers_count: 2,
+    forks_count: 1,
+    language: 'Python',
+    html_url: 'https://github.com/pride87'
+  },
+  {
     name: 'ChatApp',
     description: 'A MERN stack-based chat application developed for online communication and photo sharing.',
     stargazers_count: 2,
@@ -17,22 +33,6 @@ const fallbackRepos = [
     stargazers_count: 2,
     forks_count: 0,
     language: 'JavaScript',
-    html_url: 'https://github.com/pride87'
-  },
-  {
-    name: 'AI-Resume-Builder',
-    description: 'An AI-focused resume builder interface designed to help users create professional resumes.',
-    stargazers_count: 2,
-    forks_count: 0,
-    language: 'React',
-    html_url: 'https://github.com/pride87'
-  },
-  {
-    name: 'Food-Delivery-App',
-    description: 'A responsive food delivery frontend application with food categories, food cards, and navigation.',
-    stargazers_count: 1,
-    forks_count: 0,
-    language: 'CSS',
     html_url: 'https://github.com/pride87'
   }
 ];
